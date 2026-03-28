@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body style="text-align: center; font-family: sans-serif; padding-top: 50px;">
+<h1>Bienvenue !</h1>
+<p>Vous êtes connecté. Choisissez une page :</p>
+
+<div style="margin: 20px;">
+    <a th:href="@{/user/dashboard}">Espace Utilisateur</a> |
+    <a th:href="@{/admin/dashboard}">Espace Admin</a>
+</div>
+
+<a th:href="@{/logout}">Déconnexion</a>
+</body>
+</html>
